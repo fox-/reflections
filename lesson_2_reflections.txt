@@ -29,5 +29,13 @@ Files that haven't been changed won't be shown here. Files that were changed but
 This command discard all changes in working directory and staging area back to the state of the last commit.
 This cannot be undone, so use carefully.
 
-[git checkout master]
-...
+[git branch]
+This command shows all existing branches in the repository.
+Initial branch is called 'master' and is created by git while 'git init' command.
+
+[git branch <name_of_new_branch>]
+This command creates new branch different from master.
+After that command new branch will contain the same code as master branch.
+
+[git checkout <name_of_existing_branch>]
+This command allows to switch between existing branches in the repository.
