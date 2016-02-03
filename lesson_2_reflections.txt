@@ -1,0 +1,5 @@
+[git init]
+This command initialize an empty repository in existing folder for new project. Folder must be created befor initializing repository, while existing repository can be cloned into the folder which one level up, because cloned repository appears in its own new folder which has name on this clonned repository.
+
+[git status]
+This command shows files that were changed since the last commit, as well as current untracked files in the repository folder. It also indicates wheather current commit is 'Initial'.

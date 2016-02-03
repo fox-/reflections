@@ -1,0 +1,24 @@
+I think that using DIFF command to compare to files is useful as it can show exact places where changes had place. For me it seems great working tool given that lines that are used in the source code are relatively short, e.g. 80-120 characters long.
+
+I suppose in the long run, working on the massive projects with hundreds or even thousands lines of code it could be a really useful option to look through the history of different files and be able to restore one when needed.
+
+I may conclude that manual commits are more logical and flexible units in the sense of a particular file history. But automatic commits can save your work in some cases, for example if blackout or tornado happened. It's also better to remotely store your repository on satellite or better Voyager_2 to have your work safe in event of Doomsday.
+
+Probably, other version control systems like Google Docs or DropBox do not allow to save several files in one commit, firstly, because they use auto commit to save changes of a file in time, but several files might not be change in the automatically set up span between commits, even though these file could be logically linked to each other. And the second reason might be is that version control systems different from GIT or SVN are not code-oriented. So they simply act like a backup tools.
+
+[git log (--stat)]
+This command can show the overall history of commits in the given repository (folder you are in) for each commit indicating: id, author, date of commit, message accompanying commit.
+The (--stat) option can be used to add visual and textual representation of names of files that have been changes, and also how many lines were removed or added in each of them.
+
+[git diff (commit 1 id) (commit 2 id)]
+This command can be used to explicitly see lines of code that have been removed or added between two particular commits.
+
+[git clone (link to a repository)]
+This command creates a copy of target repository on the local machine including the whole history of commits made. So, further you are allowed to work with cloned repository locally, make changes and commit them.
+
+[git checkout (comit id)]
+This command allows to check previous commit in the history of repository replacing ALL files in the repository folder as they were in the previous chosen state. You can easily run program and explore the code of the commit you are checking out, but if you change something - this requires special handling (either discard all changes or branch)
+
+Having project under version control allows developer to try new ideas and approaches without being scared of breaking something, as version control infrastructure makes it convenient and fast to switch back to a working version or incorporate successful changes that are made to use them further.
+
+Now that my workspace is set up I want to use it to simply study GIT itself, as I have found that GIT is widely desirable skill for programmer, as it clearly seen from job offers posted by many employers. I also plan to practice GIT during my studies of object-oriented programming with Python.
