@@ -1,5 +1,33 @@
 [git init]
-This command initialize an empty repository in existing folder for new project. Folder must be created befor initializing repository, while existing repository can be cloned into the folder which one level up, because cloned repository appears in its own new folder which has name on this clonned repository.
+This command initialize an empty repository in existing folder for new project. Folder must be created before initializing repository, while existing repository can be cloned into the folder which one level up, because cloned repository appears in its own new folder which has name on this cloned repository.
 
 [git status]
 This command shows files that were changed since the last commit, as well as current untracked files in the repository folder. It also indicates wheather current commit is 'Initial'.
+
+[git add <file(s) name>]
+This command adds changed files in working directory into the staging area of git repository.
+Changed files can be added separately and committed separately to maintain logical structure
+between commits.
+
+[git commit]
+This command allows to commit changes which are currently in staged area of the git repository.
+Git will open "chosen text editor" to enter the message to commit in case you've specified one earlier.
+
+[git commit -m "<message>"]
+This command allows to commit changes from staged are and adds the message to the commit without opening
+the text editor to enter a message for the commit. (In case of short messages)
+
+[git diff]
+This command shows changes in files between working directory and staging area.
+Changed files which already were added to staging are won't be shown here.
+
+[git diff --staged]
+This command shows changes between files added to staging area and same files from the most recent commit in repository.
+Files that haven't been changed won't be shown here. Files that were changed but haven't been added to staging are won't be shown here.
+
+[git reset --hard]
+This command discard all changes in working directory and staging area back to the state of the last commit.
+This cannot be undone, so use carefully.
+
+[git checkout master]
+...
