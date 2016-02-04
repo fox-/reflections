@@ -45,3 +45,17 @@ This command allow simultaneously create a new branch and switch to it.
 
 [git log --graph --oneline <name_of_existing_branches_to_visualize>]
 This command shows schematic of a chosen existing branches to make it easier to navigate between commits.
+
+[git merge <name_of_primary_branch> <name_of_secondary_branch>]
+
+[git show]
+This command works like diff and shows differences between current commit and its parent (previous commit).
+
+[git branch -d <name_of_the_branch>]
+This command allows to delete branch. It's usually done after one branch was merged to another.
+After two branches are merged, it's possible to reach previous commit from both branches by
+executing 'git log', in this case commits from both branches will be mixed and shown in order in accordance
+with their time stamp. And by deleting branch you delete only the 'label' of that branch not all the commits.
+
+[git log -n <number_of_commits_to_show>]
+This command makes git to show log with only needed amount of commits beginning from the most recent.
