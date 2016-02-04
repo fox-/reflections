@@ -39,3 +39,9 @@ After that command new branch will contain the same code as master branch.
 
 [git checkout <name_of_existing_branch>]
 This command allows to switch between existing branches in the repository.
+
+[git checkout -b "<name_of_new_branch>"]
+This command allow simultaneously create a new branch and switch to it.
+
+[git log --graph --oneline <name_of_existing_branches_to_visualize>]
+This command shows schematic of a chosen existing branches to make it easier to navigate between commits.
