@@ -23,3 +23,13 @@ be sent to GitHub.
 [git pull origin master]
 This command allows to suck in changes made in local repository by me
 or someone else from other computer or from the GitHub website directly.
+
+[git fetch <name_of_remote>]
+[git fetch origin]
+This command allows to pull changes made by other people on the GitHub
+without discarding any changes made locally by you. Basically by creating
+new branch for changes that you fetch from the remote. More precisely
+this command updates snapshot of the remote repository.
+
+Then what is left is an unbearable mess with branches,
+pull-request-origin/master-merge-intodifferenbranch-clone-change-oush-pull-push-into_the_void
