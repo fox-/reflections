@@ -1,0 +1,9 @@
+<!-- Working with GitHub -->
+
+[git remote]
+Adds empty remote space? for adding remote repositories there.
+
+[git remote add <name_of_remote> <link_to_remote>]
+This command is used to add a remote repository. <name_of_remote> can be any
+name but usually (if you have only 1 remote repository for your local one
+you wanna use name <origin>?).
