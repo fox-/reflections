@@ -7,3 +7,19 @@ Adds empty remote space? for adding remote repositories there.
 This command is used to add a remote repository. <name_of_remote> can be any
 name but usually (if you have only 1 remote repository for your local one
 you wanna use name <origin>?).
+
+[git remote -v]
+Shows remotes for current repository and corresponding links to fetch from
+and push to data.
+
+[git push <name_of_the_remote> <name_of_local_branch>]
+[git push origin master]
+This command sends changes to the remote repository earlier created for
+the local repository. It also needs to specify a local branch to send
+changes from. Thus, all commits reachable from the specified branch will
+be sent to GitHub.
+
+[git pull <name_of_remote> <name_of_branch>]
+[git pull origin master]
+This command allows to suck in changes made in local repository by me
+or someone else from other computer or from the GitHub website directly.
